@@ -109,7 +109,7 @@ namespace LykkeApi2.Controllers
             {
                 if(operation.ClientId.HasValue &&
                    operation.ClientId.Value.ToString() == _requestContext.ClientId)
-                    return Forbid();
+                    return StatusCode((int)HttpStatusCode.Conflict);
 
                 return BadRequest();
             }
@@ -149,7 +149,7 @@ namespace LykkeApi2.Controllers
                 return Ok();
 
             if (result.IsDuplicate())
-                return Forbid();
+                return StatusCode((int)HttpStatusCode.Conflict);
             
             throw new Exception(
                 $"Transfer of '{id.ToString()}' payment resulted in '{result.Code}' code from ME.");
