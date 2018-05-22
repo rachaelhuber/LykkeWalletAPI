@@ -8,7 +8,6 @@ using Lykke.Service.OperationsHistory.Client;
 using Lykke.Service.OperationsRepository.Client;
 using Lykke.Service.PaymentSystem.Client;
 using Lykke.Service.PersonalData.Settings;
-using Lykke.Service.Settings.Client;
 
 namespace Core.Settings
 {
@@ -87,7 +86,6 @@ namespace Core.Settings
         public OperationsRepositoryServiceClientSettings OperationsRepositoryClient { set; get; }
         public AffiliateServiceClientSettings AffiliateServiceClient { get; set; }
         public KycServiceClientSettings KycServiceClient { get; set; }
-
     }
 
     public class MatchingEngineSettings
@@ -153,3 +151,4 @@ namespace Core.Settings
         }
     }
 }
+
