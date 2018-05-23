@@ -16,4 +16,7 @@
     <PackageReference Include="Lykke.Service.PaymentSystem.Client" Version="1.0.20" />
     <PackageReference Include="Lykke.Service.PersonalData" Version="1.0.71" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Wallet\" />
+  </ItemGroup>
 </Project>
